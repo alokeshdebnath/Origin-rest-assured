@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="2" name="Origin Loan Process Test">
+  	<parameter name="browserName" value="Chrome"></parameter>
+  	<parameter name="author" value="Senjuti Bhadra"></parameter>
+    <classes>
+      <class name="tests.LoginPage"/>
+      <class name="tests.LeadCreation"/>
+      <class name="tests.LoanCreation"/>
+      <class name="tests.StatusChange"/>
+      <class name="tests.Disbursement"/>
+
+
+      <!--<class name="tests.leadQueueButtonVerification"/>-->
+
+
+
+    </classes>
+  </test>
+</suite> 

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Origin Loan Process Test(failed)">
+    <parameter name="author" value="Senjuti Bhadra"/>
+    <parameter name="browserName" value="Chrome"/>
+    <classes>
+      <class name="tests.Disbursement">
+        <methods>
+          <include name="initializeDriver"/>
+          <include name="disbursement"/>
+        </methods>
+      </class> <!-- tests.Disbursement -->
+    </classes>
+  </test> <!-- Origin Loan Process Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

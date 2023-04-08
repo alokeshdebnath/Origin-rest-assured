@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-06T14:50:42 IST" name="Suite" finished-at="2023-04-06T14:51:49 IST" duration-ms="66766">
+    <groups>
+    </groups>
+    <test started-at="2023-04-06T14:50:42 IST" name="Origin Loan Process Test" finished-at="2023-04-06T14:51:49 IST" duration-ms="66766">
+      <class name="tests.LoanCreation">
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:tests.LoanCreation@568ff82]" started-at="2023-04-06T14:50:54 IST" name="initializeDriver" finished-at="2023-04-06T14:50:54 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method signature="PMatLoanCreation()[pri:0, instance:tests.LoanCreation@568ff82]" started-at="2023-04-06T14:50:54 IST" name="PMatLoanCreation" finished-at="2023-04-06T14:51:00 IST" duration-ms="6492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PMatLoanCreation -->
+      </class> <!-- tests.LoanCreation -->
+      <class name="tests.Disbursement">
+        <test-method signature="disbursement()[pri:0, instance:tests.Disbursement@2a266d09]" started-at="2023-04-06T14:51:42 IST" name="disbursement" finished-at="2023-04-06T14:51:49 IST" duration-ms="6951" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to find element with locator By.xpath: //textarea[@placeholder='Success requests']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //textarea[@placeholder='Success requests']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at pages.OriginPages.textArea(OriginPages.java:323)
+at tests.Disbursement.disbursement(Disbursement.java:68)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disbursement -->
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:tests.Disbursement@2a266d09]" started-at="2023-04-06T14:51:42 IST" name="initializeDriver" finished-at="2023-04-06T14:51:42 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+      </class> <!-- tests.Disbursement -->
+      <class name="tests.LoginPage">
+        <test-method signature="Login()[pri:0, instance:tests.LoginPage@4f83df68]" started-at="2023-04-06T14:50:42 IST" name="Login" finished-at="2023-04-06T14:50:48 IST" duration-ms="5973" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+      </class> <!-- tests.LoginPage -->
+      <class name="tests.LeadCreation">
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:tests.LeadCreation@f2ff811]" started-at="2023-04-06T14:50:48 IST" name="initializeDriver" finished-at="2023-04-06T14:50:48 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method signature="PMatLeadCreation()[pri:0, instance:tests.LeadCreation@f2ff811]" started-at="2023-04-06T14:50:48 IST" name="PMatLeadCreation" finished-at="2023-04-06T14:50:54 IST" duration-ms="5299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PMatLeadCreation -->
+      </class> <!-- tests.LeadCreation -->
+      <class name="tests.StatusChange">
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:tests.StatusChange@50caa560]" started-at="2023-04-06T14:51:00 IST" name="initializeDriver" finished-at="2023-04-06T14:51:00 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method signature="statusChange()[pri:0, instance:tests.StatusChange@50caa560]" started-at="2023-04-06T14:51:00 IST" name="statusChange" finished-at="2023-04-06T14:51:14 IST" duration-ms="13435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- statusChange -->
+        <test-method signature="statusChangeCreditApproved()[pri:0, instance:tests.StatusChange@50caa560]" started-at="2023-04-06T14:51:14 IST" name="statusChangeCreditApproved" finished-at="2023-04-06T14:51:27 IST" duration-ms="13434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- statusChangeCreditApproved -->
+        <test-method signature="statusChangeDisbursementApproved()[pri:0, instance:tests.StatusChange@50caa560]" started-at="2023-04-06T14:51:27 IST" name="statusChangeDisbursementApproved" finished-at="2023-04-06T14:51:42 IST" duration-ms="15141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- statusChangeDisbursementApproved -->
+      </class> <!-- tests.StatusChange -->
+    </test> <!-- Origin Loan Process Test -->
+  </suite> <!-- Suite -->
+</testng-results>
